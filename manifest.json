@@ -1,0 +1,16 @@
+{
+    "manifest_version": 3,
+    "name": "SkimThru",
+    "version": "1.0",
+    "description": "Speed up your reading experience.",
+    "permissions": ["activeTab"],
+    "action": {
+      "default_popup": "popup.html"
+    },
+    "content_scripts": [
+      {
+        "matches": ["<all_urls>"],
+        "js": ["content.js"]
+      }
+    ]
+}
